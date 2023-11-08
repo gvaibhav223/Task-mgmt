@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// #634eb5
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  max-width: 190px;
+}
+
+.app-bar {
+  background-color: #634eb5 !important;
+}
+
+.height-container {
+  height: calc(100vh - 180px);
+  margin-top: 65px;
+}
+
+.home-banner-img {
+  max-width: 450px;
+  margin: auto;
+}
+.banner-heading {
+  // font-size: 56px;
+  font-weight: 700;
+}
+.special-text {
+  background: linear-gradient(90deg, #1d6ffc 0%, #2bb965 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
