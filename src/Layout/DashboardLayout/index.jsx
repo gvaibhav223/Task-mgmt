@@ -67,9 +67,6 @@ function DashboardLayout(props) {
         >
           <div className="drawer-toggle">
             <div className="">{drawer}</div>
-            <div className="mx-auto">
-              <IconButton> {">"} </IconButton>
-            </div>
           </div>
         </Drawer>
       </Box>

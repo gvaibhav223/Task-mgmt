@@ -6,7 +6,13 @@ import {
   ListItemText,
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
-import { Dashboard, Home, BackupTable, Description } from "@mui/icons-material";
+import {
+  Dashboard,
+  Home,
+  BackupTable,
+  Description,
+  ManageAccounts,
+} from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../Component/Logo";
 const menuItems = [
@@ -24,6 +30,11 @@ const menuItems = [
     item: "Task",
     href: "/task",
     icon: Description,
+  },
+  {
+    item: "Profile",
+    href: "/profile",
+    icon: ManageAccounts,
   },
 ];
 

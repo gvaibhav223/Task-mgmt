@@ -8,6 +8,9 @@ import Register from "./View/Auth/Register";
 import PageNotFound from "./View/Error/PageNotFound";
 import DashboardLayout from "./Layout/DashboardLayout";
 import Home from "./View/Dashboard/Home/Home";
+import Project from "./View/Dashboard/Project";
+import Task from "./View/Dashboard/Task";
+import Profile from "./View/Dashboard/Profile";
 
 function App() {
   return (
@@ -24,9 +27,9 @@ function App() {
           </Route>
           <Route element={<DashboardLayout />}>
             <Route path="/home" element={<Home />} />
-            <Route path="/project" element={<Home />} />
-            <Route path="/task" element={<Home />} />
-            {/* <Route path="/profile" element={<Home />} /> */}
+            <Route path="/project" element={<Project />} />
+            <Route path="/task" element={<Task />} />
+            <Route path="/profile" element={<Profile />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

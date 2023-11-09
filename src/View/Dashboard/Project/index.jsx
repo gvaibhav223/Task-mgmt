@@ -1,6 +1,6 @@
 import React from "react";
 
-const index = () => {
+const Project = () => {
   return (
     <>
       <div className="">
@@ -10,4 +10,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Project;
