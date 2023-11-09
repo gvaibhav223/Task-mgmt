@@ -1,7 +1,10 @@
 import { Loupe } from "@mui/icons-material";
-import React from "react";
+import React, { useContext } from "react";
+import DataContext from "../../Context/Context";
 
 const Home = () => {
+  const ContextData = useContext(DataContext);
+  console.log(ContextData);
   return (
     <>
       <div className="home-banner-container">
