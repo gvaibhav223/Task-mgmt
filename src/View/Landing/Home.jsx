@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <div className="home-banner-container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 d-flex align-items-center">
             <div className="content-container">
               <div className="banner-heading">
                 Productivity is at{" "}
