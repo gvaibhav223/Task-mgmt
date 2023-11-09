@@ -12,13 +12,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Logo from "../../Component/Logo";
+import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About US", "Project", "Services", "Contact"];
 
 function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-
+  const navigate = useNavigate();
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
@@ -74,9 +75,23 @@ function DrawerAppBar() {
               sx={{ display: { xs: "none", sm: "block" } }}
               className="navlinkcontainer"
             >
-              <button className="btn btn-primary">Login</button>
+              <button
+                className="btn btn-primary"
+                onClick={() => {
+                  navigate("/login");
+                }}
+              >
+                Login
+              </button>
               &nbsp;
-              <button className="btn btn-secondary">Register</button>
+              <button
+                className="btn btn-secondary"
+                onClick={() => {
+                  navigate("/register");
+                }}
+              >
+                Register
+              </button>
             </Box>
           </Box>
         </Toolbar>

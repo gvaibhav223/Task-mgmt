@@ -4,7 +4,7 @@ import DataContext from "../../Context/Context";
 
 const Home = () => {
   const ContextData = useContext(DataContext);
-  console.log(ContextData);
+
   return (
     <>
       <div className="home-banner-container">

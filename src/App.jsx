@@ -5,6 +5,9 @@ import LandingPage from "./View/Landing";
 import AuthPage from "./Layout/LoginLayout";
 import Login from "./View/Auth/Login";
 import Register from "./View/Auth/Register";
+import PageNotFound from "./View/Error/PageNotFound";
+import DashboardLayout from "./Layout/DashboardLayout";
+import Home from "./View/Dashboard/Home/Home";
 
 function App() {
   return (
@@ -19,6 +22,13 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Route>
+          <Route element={<DashboardLayout />}>
+            <Route path="/home" element={<Home />} />
+            <Route path="/project" element={<Home />} />
+            <Route path="/task" element={<Home />} />
+            {/* <Route path="/profile" element={<Home />} /> */}
+          </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>

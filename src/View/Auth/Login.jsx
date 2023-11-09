@@ -1,7 +1,7 @@
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { Field, Formik, Form } from "formik";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 
 const Login = () => {
@@ -9,6 +9,7 @@ const Login = () => {
   const handleClick = () => {
     setShowPassword(!showPassword);
   };
+  const navigate = useNavigate();
   const form_validation = Yup.object().shape({
     email: Yup.string().required("Required"),
     password: Yup.string().required("Required"),
@@ -27,7 +28,7 @@ const Login = () => {
             }}
             validationSchema={form_validation}
             // onSubmit={(values) => {
-            //   console.log(values);
+            //   navigate('/dashboard)
             // }}
           >
             {({ errors, touched }) => (
