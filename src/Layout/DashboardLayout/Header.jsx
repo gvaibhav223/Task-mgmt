@@ -49,8 +49,8 @@ const Header = (props) => {
   const settings = [
     {
       id: 1,
-      label: "Profile",
-      href: "/profile",
+      label: "Logout",
+      href: "/",
     },
     // {
     //   id: 2,
