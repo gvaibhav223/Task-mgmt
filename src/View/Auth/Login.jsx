@@ -27,9 +27,9 @@ const Login = () => {
               password: "",
             }}
             validationSchema={form_validation}
-            // onSubmit={(values) => {
-            //   navigate('/dashboard)
-            // }}
+            onSubmit={(values) => {
+              navigate("/home");
+            }}
           >
             {({ errors, touched }) => (
               <Form>
