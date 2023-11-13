@@ -1,0 +1,39 @@
+{
+  "project": [
+    {
+      "project_name": "Task Mgmt",
+      "project_description": "New project for other",
+      "project_type": "construction",
+      "project_due_date": "2023-11-13",
+      "id": 1
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "task_name": "New Task",
+      "project_name": "Task Mgmt",
+      "task_description": "New Task",
+      "task_due_date": ""
+    },
+    {
+      "task_name": "Add ",
+      "task_description": "Add filter to every thing",
+      "project_name": "Task Mgmt",
+      "task_due_date": "2023-11-13",
+      "id": 2
+    }
+  ],
+  "user": [
+    {
+      "username": "vaibhav",
+      "email": "vaibhav@gmail.com",
+      "password": "1234"
+    },
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    }
+  ]
+}

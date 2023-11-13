@@ -2,24 +2,39 @@
   .banner-heading {
     font-size: 32px;
   }
+  .drawer-width {
+    width: 300px !important;
+  }
 }
 @media (min-width: 576px) {
   .banner-heading {
     font-size: 38px;
+  }
+  .drawer-width {
+    width: 400px !important;
   }
 }
 @media (min-width: 768px) {
   .banner-heading {
     font-size: 40px;
   }
+  .drawer-width {
+    width: 500px !important;
+  }
 }
 @media (min-width: 992px) {
   .banner-heading {
     font-size: 48px;
   }
+  .drawer-width {
+    width: 700px !important;
+  }
 }
 @media (min-width: 1200px) {
   .banner-heading {
     font-size: 56px;
+  }
+  .drawer-width {
+    width: 700px !important;
   }
 }

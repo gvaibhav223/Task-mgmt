@@ -1,10 +1,13 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 // #634eb5
 
+body {
+  overflow: hidden;
+}
 .align-center {
   display: flex;
   justify-content: center;
@@ -21,6 +24,11 @@
   max-width: 190px;
 }
 
+.table-responsive {
+  // display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 .app-bar {
   background-color: #634eb5 !important;
 }
@@ -30,6 +38,17 @@
   margin-top: 65px;
 }
 
+.font-family-sidebar {
+  font-size: 16px !important;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  font-size: 13px;
+}
 .home-banner-img {
   max-width: 450px;
   margin: auto;
@@ -47,6 +66,15 @@
 .service-image {
   max-width: 290px;
   margin: auto;
+}
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.btn-setting {
+  padding: 5px;
+  font-size: 14px;
 }
 
 .footer-container {
@@ -73,6 +101,12 @@
   box-shadow: 0px 0px 1px #000 !important;
 }
 
+.table-icons {
+  svg {
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
 .auth-form-box {
   // transform: translate(-50%, -50%);
   background-color: #fff;
@@ -85,4 +119,61 @@
 
 .error-msg {
   font-size: 13px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+
+.drawer {
+  .drawer-header {
+    padding: 12px;
+    h6 {
+      margin: 0px;
+    }
+  }
+  .drawer-body {
+    padding: 12px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    height: calc(100vh - 100px);
+  }
+  .drawer-footer {
+    padding: 12px;
+  }
+}
+.sidebar-listitem {
+  margin: 5px !important;
+  border-radius: 5px !important;
+  &:hover {
+    background-color: #baa9ff !important;
+    color: #fff;
+  }
+}
+
+.sidebar-active {
+  background-color: #634eb5 !important;
+  color: #fff !important;
+  margin: 5px !important;
+  border-radius: 5px !important;
+}
+
+.popup {
+}
+.popup-header {
+  padding: 12px;
+  border-radius: 5px 5px 0px 0px;
+  background: #d0d0d0;
+}
+.popup-body {
+  padding: 12px;
+}
+.popup-footer {
+  padding: 12px;
+  text-align: right;
+  border-radius: 0px 0px 5px 5px;
+  background: #d0d0d0;
 }

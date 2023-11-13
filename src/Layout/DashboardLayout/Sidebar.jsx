@@ -40,6 +40,7 @@ const menuItems = [
 
 const NavItem = ({ icon: Icon, label, href }) => {
   const navigate = useNavigate();
+
   const [active, setActive] = useState(false);
   useEffect(() => {
     if (window.location.pathname === `${href}`) {
@@ -59,8 +60,8 @@ const NavItem = ({ icon: Icon, label, href }) => {
           navigate(href);
         }}
       >
-        <Icon style={{ fontSize: "30px" }} /> &nbsp;&nbsp;
-        <ListItemText className="font-family-sidebar">{label}</ListItemText>
+        <Icon style={{ fontSize: "22px" }} /> &nbsp;&nbsp;
+        <div className="font-family-sidebar">{label}</div>
       </ListItemButton>
     </>
   );

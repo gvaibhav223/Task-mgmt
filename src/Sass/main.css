@@ -1,7 +1,11 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
 }
 
 .align-center {
@@ -20,12 +24,30 @@
   max-width: 190px;
 }
 
+.table-responsive {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .app-bar {
   background-color: #634eb5 !important;
 }
 
 .height-container {
   margin-top: 65px;
+}
+
+.font-family-sidebar {
+  font-size: 16px !important;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  font-size: 13px;
 }
 
 .home-banner-img {
@@ -47,6 +69,16 @@
 .service-image {
   max-width: 290px;
   margin: auto;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.btn-setting {
+  padding: 5px;
+  font-size: 14px;
 }
 
 .footer-container {
@@ -71,6 +103,11 @@
   box-shadow: 0px 0px 1px #000 !important;
 }
 
+.table-icons svg {
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .auth-form-box {
   background-color: #fff;
   box-shadow: 0px 0px 2px #000;
@@ -84,28 +121,99 @@
   font-size: 13px;
 }
 
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+
+.drawer .drawer-header {
+  padding: 12px;
+}
+.drawer .drawer-header h6 {
+  margin: 0px;
+}
+.drawer .drawer-body {
+  padding: 12px;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  height: calc(100vh - 100px);
+}
+.drawer .drawer-footer {
+  padding: 12px;
+}
+
+.sidebar-listitem {
+  margin: 5px !important;
+  border-radius: 5px !important;
+}
+.sidebar-listitem:hover {
+  background-color: #baa9ff !important;
+  color: #fff;
+}
+
+.sidebar-active {
+  background-color: #634eb5 !important;
+  color: #fff !important;
+  margin: 5px !important;
+  border-radius: 5px !important;
+}
+
+.popup-header {
+  padding: 12px;
+  border-radius: 5px 5px 0px 0px;
+  background: #d0d0d0;
+}
+
+.popup-body {
+  padding: 12px;
+}
+
+.popup-footer {
+  padding: 12px;
+  text-align: right;
+  border-radius: 0px 0px 5px 5px;
+  background: #d0d0d0;
+}
+
 @media (max-width: 576px) {
   .banner-heading {
     font-size: 32px;
+  }
+  .drawer-width {
+    width: 300px !important;
   }
 }
 @media (min-width: 576px) {
   .banner-heading {
     font-size: 38px;
   }
+  .drawer-width {
+    width: 400px !important;
+  }
 }
 @media (min-width: 768px) {
   .banner-heading {
     font-size: 40px;
+  }
+  .drawer-width {
+    width: 500px !important;
   }
 }
 @media (min-width: 992px) {
   .banner-heading {
     font-size: 48px;
   }
+  .drawer-width {
+    width: 700px !important;
+  }
 }
 @media (min-width: 1200px) {
   .banner-heading {
     font-size: 56px;
+  }
+  .drawer-width {
+    width: 700px !important;
   }
 }/*# sourceMappingURL=main.css.map */

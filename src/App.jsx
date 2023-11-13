@@ -11,10 +11,12 @@ import Home from "./View/Dashboard/Home/Home";
 import Project from "./View/Dashboard/Project";
 import Task from "./View/Dashboard/Task";
 import Profile from "./View/Dashboard/Profile";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <>
+      <ToastContainer />
       <BrowserRouter>
         <Routes>
           {/* Landing Page */}
